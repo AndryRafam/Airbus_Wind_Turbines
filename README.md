@@ -9,7 +9,7 @@ In this project, we are trying to build some classifiers in order to discriminat
     
 ### Result of the experiment (More models will be added time to time)
 
-#### CNN from scratch:
+#### CNN from scratch (Perso folder):
     - Test Accuracy: 98.76 % (over 3 epochs)
     - Test Loss: 5.33 % (over 3 epochs)
 #### MobileNetV2 - Transfer Learning (feature extraction)
