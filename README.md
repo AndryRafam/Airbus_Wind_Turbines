@@ -17,4 +17,4 @@ In this project, we are trying to build some classifiers in order to discriminat
     - Test Loss: 4.78 % (over 1 epoch)
 
 # ACKNOWLEDGEMENT
-This little project would not be possible without Kaggle and Airbus DS GEO S.A. Thank you for all your hard work and the fun during the tagging and hacking sessions.
+This little project would not existed without Kaggle and Airbus DS GEO S.A. Thank you for all your hard work and the fun during the tagging and hacking sessions.
