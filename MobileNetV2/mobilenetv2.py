@@ -43,6 +43,18 @@ for images,labels in train_ds.take(1):
 		plt.axis("off")
 plt.show()
 
+data_augmentation = tf.keras.Sequential([
+	tf.keras.layers.experimental.preprocessing.RandomFlip("horizontal"),
+])
+
+plt.figure(figsize=(10,10))
+for images,_ in train_ds.take(2):
+    for i in range(9):
+        ax = plt.subplot(3,3,i+1)
+        plt.imshow(images[i].numpy().astype("uint8"))
+        plt.axis("off")
+plt.show()
+
 AUTOTUNE = tf.data.AUTOTUNE
 train_ds = train_ds.prefetch(buffer_size=AUTOTUNE)
 val_ds = val_ds.prefetch(buffer_size=AUTOTUNE)
@@ -66,10 +78,11 @@ prediction_batch = prediction_layer(feature_batch_average)
 
 def get_model():
 	inputs = tf.keras.Input(shape=(160,160,3))
-	x = preprocess_input(inputs)
+	x = data_augmentation(inputs)
+	x = preprocess_input(x)
 	x = base_model(x,training=False)
 	x = global_average_layer(x)
-	x = tf.keras.layers.Dropout(0.2)(x)
+	x = tf.keras.layers.Dropout(0.2,seed=1337)(x)
 	outputs = prediction_layer(x)
 	model = tf.keras.Model(inputs,outputs)
 	return model
