@@ -7,7 +7,7 @@ In this project, we are trying to build some classifiers in order to discriminat
     - The first one is to build a CNN (Convolutional Neural Network) from scratch.
     - The second one is to use transfer learning (feature extraction).
     
-### Result of the experiment (More models will be added time to time)
+### Result of the experiment
 
 #### CNN from scratch (Perso folder):
     - Test Accuracy: 98.76 % (over 3 epochs)
@@ -17,4 +17,4 @@ In this project, we are trying to build some classifiers in order to discriminat
     - Test Loss: 4.78 % (over 1 epoch)
 
 # ACKNOWLEDGEMENT
-This little project would not existed without Kaggle and Airbus DS GEO S.A. Thank you for all your hard work and the fun during the tagging and hacking sessions.
+This little project would not has been possible without Kaggle and Airbus DS GEO S.A. Thank you for all your hard work and the fun during the tagging and hacking sessions.
