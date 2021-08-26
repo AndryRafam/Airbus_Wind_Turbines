@@ -12,9 +12,12 @@ In this project, we are trying to build some classifiers in order to discriminat
 #### CNN from scratch (Perso folder) with data augmentation:
     - Test Accuracy: 98.76 % (over 3 epochs)
     - Test Loss: 5.33 % (over 3 epochs)
-#### MobileNetV2 - Transfer Learning (feature extraction) without data augmentation:
+#### MobileNetV2 - Transfer Learning (feature extraction) with data augmentation:
     - Test Accuracy: 98.36 % (over 1 epoch)
     - Test Loss: 4.78 % (over 1 epoch)
+#### EfficientNetB3 - Transfer Learning (feature extraction) with data augmentation:
+    - Test Accuracy: 97.20 % (over 3 epochs)
+    - Test Loss: 7.55 % (over 3 epochs)
 
 # ACKNOWLEDGEMENT
 This little project would not have been possible without Kaggle and Airbus DS GEO S.A. Thank you for all your hard work and the fun during the tagging and hacking sessions.
